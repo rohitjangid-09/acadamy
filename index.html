@@ -143,7 +143,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container  fadeInUp2 hidden">
             <div class="main-slider">
                 <div class="slider-all">
                     <div class="slider-text">
@@ -216,7 +216,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container  fadeInUp2 hidden">
         <div class="about">
             <div class="about-left">
                 <span>ABOUT US EDUTION</span>
@@ -276,7 +276,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container  fadeInUp2 hidden">
         <div class="working">
             <div class="working-left">
                 <img src="images/working-image.png" alt="">
@@ -295,7 +295,7 @@
 
 
 
-    <div class="university-history">
+    <div class="university-history  fadeInUp2 hidden">
         <div class="container">
             <div class="university-history-all">
                 <div class="university-left">
@@ -474,7 +474,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container  fadeInUp2 hidden">
         <div class="teaching">
             <div class="teaching-right">
                 <ul>
@@ -592,7 +592,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container  fadeInUp2 hidden">
         <div class="education-heading">
             <span>ADMISSION GOING ON EDUTION</span>
             <h2>Join you today for your education</h2>
@@ -653,7 +653,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container  fadeInUp2 hidden">
         <div class="incidental-heading">
             <span>COURSES EDUTION</span>
             <h2>Some of our reactions are incidental</h2>
@@ -870,7 +870,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container fadeInUp2 hidden">
         <div class="engineers">
             <ul>
                 <li>
@@ -902,7 +902,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container fadeInUp2 hidden">
         <div class="apply">
             <ul>
                 <li>
@@ -922,7 +922,7 @@
     </div>
 
 
-    <div class="designer">
+    <div class="designer fadeInUp2 hidden">
         <div class="designer-text">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
                 mattis,
@@ -939,7 +939,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container fadeInUp2 hidden">
         <div class="view-all">
             <div class="view-all-text">
                 <p>VIEW ALL EVENTS EDUTION</p>
@@ -949,7 +949,7 @@
         </div>
 
 
-        <div class="upcoming">
+        <div class="upcoming fadeInUp2 hidden">
             <ul>
                 <li>
                     <div class="upcoming-image">
@@ -988,9 +988,9 @@
         </div>
     </div>
 
-    <div class="Upcoming-background"></div>
-    <div class="Upcoming-blue-background">
-        <div class="container">
+    <div class="Upcoming-background fadeInUp2 hidden"></div>
+    <div class="Upcoming-blue-background fadeInUp2 hidden">
+        <div class="container fadeInUp2 hidden">
             <div class="event-all">
                 <div class="event-text">
                     <h2>Upcoming event</h2>
@@ -1024,7 +1024,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container fadeInUp2 hidden">
         <div class="news-heading">
             <p>BLOG POST EDUTION</p>
             <h2>News & Updates</h2>
@@ -1099,7 +1099,7 @@
         </div>
     </div>
 
-    <div class="fhutar">
+    <div class="fhutar fadeInUp2 hidden">
         <div class="container">
             <div class="fhutar-all">
                 <div class="fhutar-left">
@@ -1343,6 +1343,9 @@
 
         })
     </script>
+
+    <script src="https://www.connecto.io/static/home/js/modernizr.js"></script>
+    <script src="https://www.connecto.io/static/home/js/viewportchecker.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
         $('.main-slider').slick({
@@ -1374,6 +1377,20 @@
                     }
                 },
             ]
+        });
+
+        //animated page effects
+        jQuery(document).ready(function () {
+            jQuery('.animation').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated fadeIn',
+                offset: 100
+            });
+
+            jQuery('.fadeInUp2').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated fadeInUp',
+                offset: 100
+            });
+
         });
     </script>
 </body>
