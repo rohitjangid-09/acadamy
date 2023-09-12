@@ -553,19 +553,19 @@ ul.tabs {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     border-bottom: 2px solid #fff;
-    width: 95%;
+    width: 96%;
 }
 
 
 
 ul.tabs li {
-    background: none;
+    background: transparent;
     color: #222;
     display: inline-block;
-    margin: 10px 12px 5px;
     cursor: pointer;
+    padding: 10px 18px;
 }
 
 ul.tabs li.current span {
@@ -691,8 +691,8 @@ ul.tabs li.current span {
 }
 
 .education-ovrlay {
-    height: 290px;
-    width: 260px;
+    height: auto;
+    width: 100%;
     border-radius: 8px;
     background: linear-gradient(90deg, #7269EE 3.15%, rgba(114, 105, 238, 0.74) 30.73%, rgba(255, 137, 106, 0.74) 64.58%, #FF896A 100%);
     text-align: center;
@@ -1807,15 +1807,15 @@ ul.tabs li.current span {
     }
 
     .slider-text h1 {
-        font-size: 28px;
+        font-size: 26px;
         margin: auto;
         width: auto;
     }
 
     .slider-text p {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 400;
-        width: 364px;
+        width: 354px;
         text-align: center;
         margin: auto;
         padding-top: 0px;
@@ -1830,7 +1830,7 @@ ul.tabs li.current span {
     }
 
     .slider {
-        height: 72vh;
+        height: 85vh;
     }
 
     .slider-all {
@@ -1946,8 +1946,12 @@ ul.tabs li.current span {
         padding-top: 20px;
     }
 
+    .education-image img {
+        width: 243px;
+    }
+
     .university-history {
-        height: 192vh;
+        height: 270vh;
     }
 
     .university-history-all {
@@ -2028,6 +2032,7 @@ ul.tabs li.current span {
 
     .teaching-right li {
         margin: 20px 0;
+        width: 100%;
     }
 
     .teaching-right>ul>li:nth-last-child(4) {
@@ -2074,8 +2079,12 @@ ul.tabs li.current span {
 
     .incidental-heading h2 {
         font-size: 22px;
-        width: 104%;
+        width: 100%;
         margin: 10px 0;
+    }
+
+    .incidental-heading {
+        margin: 33px 0 24px;
     }
 
     .incidental-text a {
@@ -2256,8 +2265,8 @@ ul.tabs li.current span {
     }
 
     .fhutar {
-        height: 128vh;
-        margin: 100px 0;
+        height: 100%;
+        margin: 100px 0 -81px;
     }
 
     .fhutar-all {
@@ -2268,6 +2277,24 @@ ul.tabs li.current span {
     .fhutar-cenatar {
         display: block;
     }
+
+    .fhutar-bottam {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fhutar-bottam-left {
+        text-align: center;
+    }
+
+    .fhutar-bottam h3 {
+        font-size: 14px;
+    }
+
+    .fhutar-bottam-left a {
+        font-size: 14px;
+    }
+
 
     .fhutar-cenatar-right {
         margin-left: 0;
