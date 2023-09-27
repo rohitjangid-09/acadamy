@@ -2210,7 +2210,7 @@ ul.tabs li.current span {
     }
 
     .Upcoming-blue-background {
-        height: 625px;
+        height: auto;
     }
 
     .event-all {
