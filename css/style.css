@@ -120,6 +120,8 @@ ul li {
 }
 
 
+
+/* menu page */
 .menu ul li ul {
     position: absolute;
     left: -20px;
@@ -1992,7 +1994,7 @@ ul.tabs li.current span {
         width: 341px;
     }
 
-    .video {
+    .video .video-two {
         width: 300px;
         padding-left: 0;
     }
