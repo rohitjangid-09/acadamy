@@ -7,6 +7,9 @@
 body {
     font-size: 14px;
     font-family: 'roboto';
+
+
+
 }
 
 a {
@@ -18,7 +21,8 @@ ul li {
 }
 
 .container {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: auto;
 }
 
@@ -107,6 +111,19 @@ ul li {
     width: 100%;
 }
 
+.menu ul li ul li a:hover::after {
+    position: absolute;
+    left: 0px;
+    top: 15;
+    content: "/ /";
+}
+.menu ul li ul li a:hover{
+    padding-left: 20px;
+}
+
+
+
+
 .arrow-white {
     padding-left: 5px;
 }
@@ -124,7 +141,7 @@ ul li {
 /* menu page */
 .menu ul li ul {
     position: absolute;
-    left: -20px;
+    left: 0px;
     top: 70px;
     background-color: #ffffff;
     width: 200px;
@@ -157,6 +174,11 @@ ul li {
     color: #000;
     margin: 15px 20px;
     text-align: left;
+    position: relative;
+}
+
+.menu>ul>li ul li a:hover {
+    margin-left: 20px;
 }
 
 .menu ul li ul li:first-child a {
@@ -166,6 +188,7 @@ ul li {
 .menu ul li ul li a:hover {
     /* background: #FF4E3C; */
     color: #bd5f19;
+    margin-left: 20px;
 }
 
 
@@ -189,10 +212,10 @@ ul li {
 
 .slider-text p {
     color: #FFF;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 30px;
-    width: 630px;
+    width: 598px;
     padding-top: 20px;
 }
 
@@ -203,7 +226,7 @@ ul li {
 
 .button a {
     color: #FFF;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     border-radius: 3px;
     background: #FF7953;
@@ -229,16 +252,12 @@ ul li {
     height: 350px;
 }
 
-
-
 .slider-all {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 180px;
-
 }
-
 
 
 .about-left span {
@@ -258,17 +277,17 @@ ul li {
 
 .about-left p {
     color: #737070;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    width: 550px;
+    width: 478px;
     line-height: 28px;
     padding-top: 20px;
 }
 
 .about-left a {
     color: #FFF;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     background-color: #584BED;
     border-radius: 47px;
     display: inline-block;
@@ -279,20 +298,16 @@ ul li {
 
 .about-left a:hover {
     background-color: #FF7953;
-
 }
 
 .about-right ul li {
-    border-radius: 19px;
+    border-radius: 21px;
     background: #07294E;
     margin: 0 18px;
     width: 280px;
     position: relative;
     z-index: 1;
 }
-
-
-
 
 .about-right li {
     overflow: hidden;
@@ -330,9 +345,7 @@ ul li {
 }
 
 
-.about-right {
-    margin-left: 80px;
-}
+
 
 .about-box img {
     height: 40px;
@@ -364,6 +377,7 @@ ul li {
 .about-right ul {
     display: flex;
     align-items: center;
+    justify-content: right;
     flex-wrap: wrap;
 }
 
@@ -410,7 +424,7 @@ ul li {
 
 .working-right p {
     color: #737070;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     width: 550px;
     line-height: 28px;
@@ -419,8 +433,8 @@ ul li {
 
 .working-right a {
     color: #FFF;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     background-color: #584BED;
     border-radius: 47px;
     display: inline-block;
@@ -475,7 +489,7 @@ ul li {
 }
 
 .university-left p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #FFF;
     width: 350px;
@@ -484,8 +498,8 @@ ul li {
 }
 
 .university-left a {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     background-color: #FF7953;
     padding: 15px 35px;
     display: inline-block;
@@ -557,7 +571,7 @@ ul.tabs {
     justify-content: center;
     padding-bottom: 0px;
     border-bottom: 2px solid #fff;
-    width: 96%;
+    width: 86%;
 }
 
 
@@ -573,7 +587,7 @@ ul.tabs li {
 ul.tabs li.current span {
     background: #fff;
     color: #3E64DE;
-    padding: 10px 18px;
+    padding: 10px 16px;
     transition: 0.5s all ease;
 }
 
@@ -589,10 +603,10 @@ ul.tabs li.current span {
 
 .tabs li>span {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     background: transparent;
-    padding: 10px 18px;
+    padding: 10px 16px;
 }
 
 
@@ -635,7 +649,7 @@ ul.tabs li.current span {
 }
 
 .partnership-box span {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #FFF;
     line-height: 28px;
@@ -643,7 +657,7 @@ ul.tabs li.current span {
 
 
 .partnership-box p {
-    font-size: 20px;
+    font-size: 16px;
     color: #FFF;
     font-weight: 400;
     line-height: 28px;
@@ -651,9 +665,9 @@ ul.tabs li.current span {
     /* width: 550px; */
 }
 
-.university-right {
+/* .university-right {
     margin-left: 18px;
-}
+} */
 
 .teaching {
     display: flex;
@@ -670,10 +684,11 @@ ul.tabs li.current span {
     position: relative;
     transition: 0.5s all ease;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .education-ovrlay {
-    height: auto;
+    height: 294px;
     width: 100%;
     border-radius: 8px;
     background: linear-gradient(90deg, #7269EE 3.15%, rgba(114, 105, 238, 0.74) 30.73%, rgba(255, 137, 106, 0.74) 64.58%, #FF896A 100%);
@@ -693,6 +708,7 @@ ul.tabs li.current span {
 .teaching-right ul li:hover .education-ovrlay {
     visibility: visible;
     transform: translateY(0);
+    padding-top: 59px;
 }
 
 .education-ovrlay h2 {
@@ -755,12 +771,10 @@ ul.tabs li.current span {
 
 
 .teaching-right img {
-    height: 290px;
     width: 260px;
 }
 
 .teaching-right>ul>li:nth-last-child(4) {
-
     bottom: 30px;
 }
 
@@ -796,13 +810,13 @@ ul.tabs li.current span {
     width: 520px;
     line-height: 28px;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .teaching-left a {
     color: #FFF;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     background-color: #584BED;
     padding: 15px 35px;
     display: inline-block;
@@ -1029,7 +1043,7 @@ ul.tabs li.current span {
 
 .skill p {
     color: #737070;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 400;
     width: 300px;
     line-height: 25px;
@@ -1067,7 +1081,7 @@ ul.tabs li.current span {
 .apply p {
     color: #FFF;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     width: 400px;
     margin: auto;
@@ -1078,7 +1092,7 @@ ul.tabs li.current span {
 .apply a {
     color: #FFF;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     border-radius: 67px;
     background: #FF7953;
@@ -1104,7 +1118,7 @@ ul.tabs li.current span {
 
 .apply li:last-child:after {
     border-right: 1px solid #ffff;
-    height: 98.5%;
+    height: 500px;
     width: 25px;
     content: "";
     position: absolute;
@@ -1146,7 +1160,7 @@ ul.tabs li.current span {
     line-height: 30px;
     color: #FFF;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     margin: auto;
 }
@@ -1197,7 +1211,7 @@ ul.tabs li.current span {
 .view-all a {
     color: #FFF;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     border-radius: 67px;
     background: #3E64DE;
@@ -1258,8 +1272,8 @@ ul.tabs li.current span {
 }
 
 .upcoming a {
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
     background-color: #3E64DE;
     display: inline-block;
     padding: 17px 28px;
@@ -1428,7 +1442,7 @@ ul.tabs li.current span {
 }
 
 .news-box-text p {
-    font-size: 18px;
+    font-size: 16px;
     color: #737070;
     line-height: 27px;
 }
@@ -1438,7 +1452,7 @@ ul.tabs li.current span {
 }
 
 .news-box-text a {
-    font-size: 17px;
+    font-size: 15px;
     color: #3E64DE;
     font-weight: 500;
     border: 1px solid #3E64DE;
@@ -1469,7 +1483,7 @@ ul.tabs li.current span {
 }
 
 .fhutar-left-text a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #FFF;
 }
@@ -1499,7 +1513,7 @@ ul.tabs li.current span {
 }
 
 .fhutar-cenatar-left-text p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #FFF;
     padding-left: 10px;
@@ -1518,7 +1532,7 @@ ul.tabs li.current span {
 }
 
 .fhutar-cenatar-right a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #FFF;
 }
@@ -1764,6 +1778,16 @@ ul.tabs li.current span {
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:767px) {
     * {
         padding: 0;
@@ -1920,6 +1944,10 @@ ul.tabs li.current span {
         padding-top: 15px;
     }
 
+    .partnership-box img {
+        width: 100%;
+    }
+
     .working-right p {
         font-size: 17px;
         font-weight: 400;
@@ -1933,7 +1961,8 @@ ul.tabs li.current span {
     }
 
     .university-history {
-        height: 270vh;
+        height: 190vh;
+        width: 100%;
     }
 
     .university-history-all {
@@ -1950,7 +1979,7 @@ ul.tabs li.current span {
     }
 
     .university-left p {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 400;
         width: 310px;
         line-height: 28px;
@@ -1964,7 +1993,7 @@ ul.tabs li.current span {
 
     ul.tabs {
         display: block;
-        width: 357px;
+        width: 100%;
         text-align: center;
     }
 
@@ -1990,8 +2019,8 @@ ul.tabs li.current span {
     }
 
     .partnership-box span {
-        font-size: 17px;
-        width: 341px;
+        font-size: 16px;
+        width: 100%;
     }
 
     .video .video-two {
@@ -2014,11 +2043,15 @@ ul.tabs li.current span {
 
     .teaching-right li {
         margin: 20px 0;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .teaching-right>ul>li:nth-last-child(4) {
         bottom: 0;
+    }
+
+    .teaching-right ul li:hover .education-ovrlay {
+        padding-top: 117px;
     }
 
     .teaching-right>ul>li:nth-last-child(3) {
@@ -2038,7 +2071,7 @@ ul.tabs li.current span {
     .teaching-left h2 {
         font-size: 23px;
         font-weight: 500;
-        width: 360px;
+        width: 100%;
         line-height: 34px;
         padding-top: 15px;
         margin: auto;
@@ -2055,7 +2088,7 @@ ul.tabs li.current span {
 
     .education-heading h2 {
         font-size: 22px;
-        width: 104%;
+        /* width: 104%; */
         margin: 10px 0;
     }
 
@@ -2102,6 +2135,7 @@ ul.tabs li.current span {
         padding-top: 10px;
         text-align: center;
         margin: auto;
+        width: 100%;
     }
 
     .apply {
@@ -2138,7 +2172,7 @@ ul.tabs li.current span {
 
     .designer-text>p {
         width: 324px;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
     }
 
@@ -2155,6 +2189,10 @@ ul.tabs li.current span {
 
     .upcoming {
         display: block;
+    }
+
+    .education-ovrlay {
+        height: 407px;
     }
 
     .upcoming-image {
@@ -2195,7 +2233,7 @@ ul.tabs li.current span {
 
     .event-text h2 {
         font-size: 22px;
-        width: 160%;
+        width: 100%;
         margin: 10px 0;
         font-weight: 500;
     }
@@ -2209,12 +2247,20 @@ ul.tabs li.current span {
         width: 210px;
     }
 
-    .Upcoming-blue-background {
+    /* .Upcoming-blue-background {
         height: auto;
+    } */
+
+    .Upcoming-blue-background {
+        height: 628px;
+    }
+
+    .education-ovrlay-icon ul {
+        display: flex;
     }
 
     .event-all {
-        display: block;
+        flex-wrap: wrap;
     }
 
     .event-box ul {
@@ -2299,6 +2345,7 @@ ul.tabs li.current span {
     }
 
 }
+
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -2410,7 +2457,7 @@ ul.tabs li.current span {
     }
 
     100% {
-        opacity: -webkit-transform: none;
+        opacity: -webkit-transform none;
         transform: none
     }
 }
@@ -2480,7 +2527,7 @@ ul.tabs li.current span {
     }
 
     100% {
-        opacity: -webkit-transform: none;
+        opacity: -webkit-transform none;
         transform: none
     }
 }
@@ -2634,4 +2681,21 @@ ul.tabs li.current span {
     to {
         margin-top: 15px;
     }
+}
+
+#priloder {
+    background-color: #0e111f;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+}
+
+#priloder img {
+    margin: 5% 0;
+}
+
+.video-loader {
+    display: none;
 }
